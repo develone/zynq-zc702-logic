@@ -1,0 +1,11 @@
+/SDK/
+/__xps/
+/implementation/
+/synthesis/
+/*.log
+/XpsGuiSessionLock
+/platgen.opt
+/system.make
+/system_incl.make
+/hdl/
+/etc/

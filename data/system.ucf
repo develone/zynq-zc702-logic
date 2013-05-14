@@ -1,0 +1,23 @@
+
+NET hdmi_clk        LOC = L16  | IOSTANDARD = LVCMOS25;
+NET hdmi_vsync      LOC = H15  | IOSTANDARD = LVCMOS25;
+NET hdmi_hsync      LOC = R18  | IOSTANDARD = LVCMOS25;
+NET hdmi_data_e     LOC = T18  | IOSTANDARD = LVCMOS25;
+NET hdmi_data[0]    LOC = AB21 | IOSTANDARD = LVCMOS25;
+NET hdmi_data[1]    LOC = AA21 | IOSTANDARD = LVCMOS25;
+NET hdmi_data[2]    LOC = AB22 | IOSTANDARD = LVCMOS25;
+NET hdmi_data[3]    LOC = AA22 | IOSTANDARD = LVCMOS25;
+NET hdmi_data[4]    LOC = V19  | IOSTANDARD = LVCMOS25;
+NET hdmi_data[5]    LOC = V18  | IOSTANDARD = LVCMOS25;
+NET hdmi_data[6]    LOC = V20  | IOSTANDARD = LVCMOS25;
+NET hdmi_data[7]    LOC = U20  | IOSTANDARD = LVCMOS25;
+NET hdmi_data[8]    LOC = W21  | IOSTANDARD = LVCMOS25;
+NET hdmi_data[9]    LOC = W20  | IOSTANDARD = LVCMOS25;
+NET hdmi_data[10]   LOC = W18  | IOSTANDARD = LVCMOS25;
+NET hdmi_data[11]   LOC = T19  | IOSTANDARD = LVCMOS25;
+NET hdmi_data[12]   LOC = U19  | IOSTANDARD = LVCMOS25;
+NET hdmi_data[13]   LOC = R19  | IOSTANDARD = LVCMOS25;
+NET hdmi_data[14]   LOC = T17  | IOSTANDARD = LVCMOS25;
+NET hdmi_data[15]   LOC = T16  | IOSTANDARD = LVCMOS25;
+NET hdmi_spdif      LOC = R15  | IOSTANDARD = LVCMOS25;
+NET hdmi_int        LOC = U14  | IOSTANDARD = LVCMOS25;
