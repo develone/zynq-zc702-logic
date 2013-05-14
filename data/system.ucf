@@ -21,3 +21,6 @@ NET hdmi_data[14]   LOC = T17  | IOSTANDARD = LVCMOS25;
 NET hdmi_data[15]   LOC = T16  | IOSTANDARD = LVCMOS25;
 NET hdmi_spdif      LOC = R15  | IOSTANDARD = LVCMOS25;
 NET hdmi_int        LOC = U14  | IOSTANDARD = LVCMOS25;
+
+NET processing_system7_0_GPIO_pin[0]   LOC = G19  | IOSTANDARD = LVCMOS25; # SW5
+NET processing_system7_0_GPIO_pin[1]   LOC = F19  | IOSTANDARD = LVCMOS25; # SW7

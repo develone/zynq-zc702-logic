@@ -30,6 +30,7 @@
  PORT hdmi_data_e = axi_hdmi_tx_16b_0_hdmi_data_e, DIR = O
  PORT hdmi_spdif = axi_spdif_tx_0_spdif_tx_o, DIR = O
  PORT hdmi_int = hdmi_int, DIR = I, SIGIS = INTERRUPT
+ PORT processing_system7_0_GPIO_pin = processing_system7_0_GPIO, DIR = IO, VEC = [1:0]
 
 
 BEGIN processing_system7
@@ -94,7 +95,8 @@ BEGIN processing_system7
  PARAMETER C_USE_S_AXI_HP2 = 1
  PARAMETER C_INTERCONNECT_S_AXI_HP0_MASTERS = axi_vdma_0.M_AXI_MM2S
  PARAMETER C_INTERCONNECT_S_AXI_HP2_MASTERS = axi_dma_0.M_AXI_MM2S & axi_dma_0.M_AXI_SG
- PARAMETER C_EMIO_GPIO_WIDTH = 64
+ PARAMETER C_EMIO_GPIO_WIDTH = 2
+ PARAMETER C_EN_EMIO_GPIO = 1
  BUS_INTERFACE M_AXI_GP0 = axi_interconnect_1
  BUS_INTERFACE S_AXI_HP0 = axi_interconnect_2
  BUS_INTERFACE S_AXI_HP2 = axi_interconnect_0
@@ -129,6 +131,7 @@ BEGIN processing_system7
  PORT S_AXI_HP0_ACLK = processing_system7_0_FCLK_CLK1
  PORT S_AXI_HP2_ACLK = processing_system7_0_FCLK_CLK0
  PORT IRQ_F2P = axi_vdma_0_mm2s_introut & axi_dma_0_mm2s_introut & hdmi_int & axi_spdif_tx_0_spdif_tx_int_o & axi_dma_0_s2mm_introut
+ PORT GPIO = processing_system7_0_GPIO
 END
 
 BEGIN axi_vdma
