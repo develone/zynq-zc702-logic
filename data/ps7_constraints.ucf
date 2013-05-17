@@ -19,8 +19,8 @@
 # I/O STANDARDS and Location Constraints                                   #
 ############################################################################
 
-NET "MIO[53]"   IOSTANDARD = LVCMOS18 | DRIVE = "8" | SLEW = "slow" | LOC = "C12" ; #  Enet 0 / mdio / MIO[53]
-NET "MIO[52]"   IOSTANDARD = LVCMOS18 | DRIVE = "8" | SLEW = "slow" | LOC = "D10" ; #  Enet 0 / mdc / MIO[52]
+NET "MIO[53]"   IOSTANDARD = LVCMOS18 | DRIVE = "8" | SLEW = "slow" | LOC = "C12" | PULLUP = "TRUE" ; #  Enet 0 / mdio / MIO[53]
+NET "MIO[52]"   IOSTANDARD = LVCMOS18 | DRIVE = "8" | SLEW = "slow" | LOC = "D10" | PULLUP = "TRUE" ; #  Enet 0 / mdc / MIO[52]
 NET "MIO[51]"   IOSTANDARD = LVCMOS18 | DRIVE = "8" | SLEW = "slow" | LOC = "C10" | PULLUP = "TRUE" ; #  I2C 0 / sda / MIO[51]
 NET "MIO[50]"   IOSTANDARD = LVCMOS18 | DRIVE = "8" | SLEW = "slow" | LOC = "D13" | PULLUP = "TRUE" ; #  I2C 0 / scl / MIO[50]
 NET "MIO[49]"   IOSTANDARD = LVCMOS18 | DRIVE = "8" | SLEW = "slow" | LOC = "C14" | PULLUP = "TRUE" ; #  UART 1 / rx / MIO[49]
